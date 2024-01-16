@@ -6,17 +6,21 @@ use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
+use function Laravel\Prompts\password;
 
 class UserSeeder extends Seeder
 {
-
-    public function run()
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
     {
         User::create([
-            'name'=>'Admin',
+            'name'=> 'Admin',
             'role_id'=>1,
-            'email'=>'admin@gmail.com',
+            'email'=>'abd@company.com',
             'password'=>Hash::make('secret')
         ]);
+
     }
 }

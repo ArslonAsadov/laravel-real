@@ -8,12 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Application extends Model
 {
     protected $fillable = [
-        "user_id",
+       "user_id",
         "subject",
-         "messege",
+        "message",
         "file_url",
     ];
-
-  public  function user(){return $this->belongsTo(User::class);}
-
+    public function user(){return $this->belongsTo(User::class);}
 }
