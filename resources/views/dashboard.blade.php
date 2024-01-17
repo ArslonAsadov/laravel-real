@@ -4,7 +4,12 @@
             {{ __('Dashboard') }}
         </h2>
     </x-slot>
-
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/tailwindcss@1.4.6/dist/tailwind.min.css" rel="stylesheet">
+    </head>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
@@ -58,7 +63,7 @@
                                         <input type="file" class="p-3 mt-2 mb-4 w-full bg-slate-200 rounded border-2 border-slate-200 focus:border-slate-600 focus:outline-none">
 
 
-                                        <input type="submit" class="py-3 px-6 my-2 bg-emerald-500 text-white font-medium rounded hover:bg-indigo-500 cursor-pointer ease-in-out duration-300" value="Send">
+                                        <input type="submit" class="py-3 px-6 my-2 bg-emerald-500 text-danger font-medium rounded hover:bg-indigo-500  ease-in-out duration-300" value="Send">
                                     </form>
 
                                 </div>
@@ -69,4 +74,5 @@
             </div>
         </div>
     </div>
+
 </x-app-layout>
